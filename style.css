@@ -1,0 +1,273 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.header {
+    position: fixed;
+    background: rgb(17, 17, 17);
+    backdrop-filter: blur(10px);
+    padding: 35px 10%;
+    left: 0;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.title{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.logo{
+    font-size: 25px;
+    color:#ffffff;
+    font-weight: 600;
+    transition: 0.3 ease;
+}
+
+.logo:hover{
+    color: red;
+    text-shadow: 0 0 25px red,
+                 0 0 50px red;
+    transform: scale(1.1);
+}
+
+span{
+    color: red;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+}
+
+.navbar a:hover,
+.navbar a:active{
+    text-decoration: none;
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.contactButton{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border:2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transform: 0.3 ease;
+}
+
+.contactButton:hover{
+    background-color: red;
+    box-shadow: 0 0 25px red;
+    color: white;
+}
+.home{
+    width: 100%;
+    min-height:100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+.home-content{
+    max-width: 800px;
+    padding: 60px;
+    background-color: #242323;
+    border-radius: 40px;
+    color: #f1f1f1;
+}
+.img-box{
+    width: 800px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height:1.2;
+}
+.home-content{
+    font-size: 18px;
+}
+.info{
+    width: 100%;
+    min-height:100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 5em; */
+    background-color: #242323;
+    padding-top: 40px;
+}
+.begining{
+    padding: 40px;
+    background-color: #242323;
+    border-radius: 40px;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    font-size: 2rem;
+}
+.main-info{
+    width: 100%;
+    padding: 20px;
+    padding-left: 60px;
+    color: #f1f1f1;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.info-text{
+    max-width: 60%;
+    font-size: 18px;
+    
+}
+.info-text p{
+    text-indent: 30px;
+}
+.contact{
+    width: 100%;
+    min-height:100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding-top: 40px;
+}
+ /* Style the form container */
+ .form-container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+/* Style form inputs and labels */
+.form-container input[type=text], 
+.form-container input[type=email], 
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+.form-container textarea {
+    min-height: 200px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+/* Style the submit button */
+.form-container input[type=submit] {
+    background-color: #ff0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Add some spacing between form elements */
+.form-container input[type=text]:focus, 
+.form-container input[type=email]:focus, 
+.form-container textarea:focus {
+    border-color: #ff0000;
+}
+
+/* Center the form on smaller screens */
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+/* Style the footer container */
+.footer {
+    background-color: #242323;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+/* Style the social media icons */
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Style the social media icons on hover */
+.footer .social-icons a:hover {
+    color: red;
+}
+
+/* Center the footer on smaller screens */
+@media screen and (max-width: 600px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+/* Style the carousel container */
+.carousel {
+    width: 600px;
+    margin: auto;
+}
+
+/* Style the carousel indicators */
+.carousel-indicators li {
+    background-color: #bbb;
+}
+
+.carousel-indicators .active {
+    background-color: #333;
+}
+
+/* Style the carousel slides */
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
